@@ -15,109 +15,60 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="brand display" href="./"><img src="img/icon.png" alt="">Zodiac Match</a>
-    <nav>
-      <a class="hide-sm" href="#play">How to play</a>
-      <a class="hide-sm" href="#screens">Screenshots</a>
-      <a href="#parents">Parents</a>
-      <a href="privacy/">Privacy</a>
-    </nav>
+    <a class="brand display" href="./"><img src="img/icon.png" alt=""><span>Zodiac Match</span></a>
+    <nav><a href="#parents">Parents</a><a href="privacy/">Privacy</a></nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="floaters" id="floaters"></div>
-  <div class="wrap">
-    <div>
-      <h1 id="title">Zodiac Match</h1>
-      <div class="tag">Match 3 animal friends!</div>
-      <p>Tap tiles with the twelve zodiac animals. Put three of the same animal in the tray and they pop. Clear the board to win. Calm, colorful and made for kids.</p>
-      <div class="cta">
-        <span class="btn soon" aria-label="Coming soon to Google Play">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.6v18.8c0 .5.5.8 1 .6l15.6-9.4c.4-.3.4-.9 0-1.2L5 2c-.5-.2-1 .1-1 .6z"/></svg>
-          Coming soon on Google Play
-        </span>
-      </div>
-    </div>
-    <div>
-      <div class="phone"><div class="screen" id="screen">
-        <img class="on" src="img/shots/title.webp" alt="Title screen with the zodiac animals around a panda">
-        <img src="img/shots/board.webp" alt="A level full of animal tiles">
-        <img src="img/shots/win.webp" alt="Well done screen with three stars">
-        <img src="img/shots/stickers.webp" alt="Sticker book with animals to collect">
-        <img src="img/shots/daily.webp" alt="Daily puzzle with stamps">
-      </div></div>
-      <div class="dots" id="dots"></div>
-    </div>
-  </div>
-</section>
+<main class="scene">
+  <div class="sun"></div>
+  <div class="lanterns" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="petals" id="petals" aria-hidden="true"></div>
 
-<section id="play">
-  <div class="wrap">
-    <div class="head reveal">
-      <h2>How to play</h2>
-      <p>Tap a tile. It jumps into the tray. Three of a kind and pop!</p>
-    </div>
-    <div class="demo reveal">
-      <div class="board" id="board"></div>
-      <div class="tray" id="tray"></div>
-    </div>
+  <div class="wrap intro">
+    <img class="badge" src="img/icon.png" alt="">
+    <h1 id="title">Zodiac Match</h1>
+    <p class="tag">Match 3 animal friends!</p>
+    <p class="lede">Tap the twelve zodiac animals, fill the tray with three of a kind and watch them pop. A calm, colorful puzzle made for kids.</p>
+    <span class="btn" aria-label="Coming soon to Google Play">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.6v18.8c0 .5.5.8 1 .6l15.6-9.4c.4-.3.4-.9 0-1.2L5 2c-.5-.2-1 .1-1 .6z"/></svg>
+      Coming soon on Google Play
+    </span>
+    <ul class="facts">
+      <li><b>117</b> levels</li>
+      <li><b>24</b> stickers</li>
+      <li><b>10</b> languages</li>
+      <li>daily puzzle</li>
+    </ul>
   </div>
-</section>
 
-<section>
-  <div class="wrap">
-    <div class="head reveal">
-      <h2>What's inside</h2>
-      <p>Lots to play, nothing to worry about.</p>
-    </div>
-    <div class="grid">
-      <div class="card reveal"><div class="ico"><img src="img/animals/dragon.webp" alt=""></div><h3>117 levels</h3><p>Easy, Medium and Hard sets, a Lunar New Year set, and three extra worlds with new animals.</p></div>
-      <div class="card reveal"><div class="ico"><img src="img/animals/rabbit.webp" alt=""></div><h3>Pick your challenge</h3><p>Easy gives a roomy tray of 7 slots. Hard gives only 5, so you think ahead.</p></div>
-      <div class="card reveal"><div class="ico"><img src="img/animals/sheep.webp" alt=""></div><h3>Daily puzzle</h3><p>A new puzzle every day. Collect a stamp for each day in a row.</p></div>
-      <div class="card reveal"><div class="ico"><img src="img/animals/panda.webp" alt=""></div><h3>Sticker book</h3><p>24 animal stickers to earn, and tile styles to unlock as you play.</p></div>
-      <div class="card reveal"><div class="ico"><img src="img/animals/monkey.webp" alt=""></div><h3>10 languages</h3><p>The game can say each animal's name out loud, in your language.</p></div>
-      <div class="card reveal"><div class="ico"><img src="img/animals/tiger.webp" alt=""></div><h3>Color help</h3><p>Extra marks on tiles for kids who see colors differently. Undo and shuffle when you get stuck.</p></div>
-    </div>
+  <div class="fan" id="fan" aria-label="Screenshots">
+    <figure><img src="img/shots/title.webp" alt="Meet the zodiac animals"></figure>
+    <figure><img src="img/shots/sets.webp" alt="Pick a set of levels"></figure>
+    <figure><img src="img/shots/board.webp" alt="Clear the board"></figure>
+    <figure><img src="img/shots/win.webp" alt="Earn three stars"></figure>
+    <figure><img src="img/shots/stickers.webp" alt="Collect animal stickers"></figure>
+    <figure><img src="img/shots/daily.webp" alt="A new puzzle every day"></figure>
+    <figure><img src="img/shots/tiles.webp" alt="Unlock tile styles"></figure>
   </div>
-</section>
+  <p class="caption" id="caption">Meet the zodiac animals</p>
 
-<section id="screens">
-  <div class="wrap">
-    <div class="head reveal">
-      <h2>Screenshots</h2>
-      <p>Straight from the game.</p>
-    </div>
-  </div>
-  <div class="strip reveal"><div class="track" id="track">
-    <figure><img src="img/shots/title.webp" alt="Title screen" loading="lazy"><figcaption>Meet the animals</figcaption></figure>
-    <figure><img src="img/shots/sets.webp" alt="Set picker" loading="lazy"><figcaption>Choose a set</figcaption></figure>
-    <figure><img src="img/shots/board.webp" alt="A full board" loading="lazy"><figcaption>Clear the board</figcaption></figure>
-    <figure><img src="img/shots/playing.webp" alt="Playing level 1" loading="lazy"><figcaption>Fill the tray</figcaption></figure>
-    <figure><img src="img/shots/win.webp" alt="Three stars" loading="lazy"><figcaption>Earn three stars</figcaption></figure>
-    <figure><img src="img/shots/stickers.webp" alt="Sticker book" loading="lazy"><figcaption>Collect stickers</figcaption></figure>
-    <figure><img src="img/shots/tiles.webp" alt="Tile styles" loading="lazy"><figcaption>Unlock tile styles</figcaption></figure>
-    <figure><img src="img/shots/daily.webp" alt="Daily puzzle" loading="lazy"><figcaption>Daily puzzle</figcaption></figure>
-    <figure><img src="img/shots/settings.webp" alt="Settings" loading="lazy"><figcaption>Easy settings</figcaption></figure>
-  </div></div>
-</section>
+  <svg class="hills" viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 140 C 220 60 380 70 560 130 S 900 210 1100 120 S 1340 60 1440 100 V260 H0Z" fill="#bfe3a8"/>
+    <path d="M0 190 C 260 120 460 150 700 190 S 1120 230 1440 160 V260 H0Z" fill="#8fcf7a"/>
+    <path d="M0 230 C 300 200 600 215 900 232 S 1300 236 1440 222 V260 H0Z" fill="#6cb85c"/>
+  </svg>
+</main>
 
-<section id="parents">
+<section id="parents" class="parents">
   <div class="wrap">
-    <div class="parents reveal">
-      <div>
-        <h2>For parents</h2>
-        <p>Zodiac Match is built for young players. It works offline and keeps progress only on the device.</p>
-        <p><a href="privacy/">Read the privacy policy</a></p>
-      </div>
-      <ul>
-        <li><b>&#10003;</b><span>No account and no sign in</span></li>
-        <li><b>&#10003;</b><span>No personal information collected</span></li>
-        <li><b>&#10003;</b><span>No chat and no way to contact other players</span></li>
-        <li><b>&#10003;</b><span>Purchases sit behind a grown-up check</span></li>
-        <li><b>&#10003;</b><span>Plays without an internet connection</span></li>
-      </ul>
+    <h2>Made for kids, kind to parents</h2>
+    <div class="promises">
+      <div><img src="img/animals/panda.webp" alt=""><span>No account and no personal data</span></div>
+      <div><img src="img/animals/rabbit.webp" alt=""><span>Plays offline, no chat</span></div>
+      <div><img src="img/animals/tiger.webp" alt=""><span>Purchases behind a grown-up check</span></div>
     </div>
+    <a class="more" href="privacy/">Read the privacy policy</a>
   </div>
 </section>
 
@@ -131,126 +82,43 @@
 <script>
 (function () {
   var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var animals = ['rat', 'ox', 'tiger', 'rabbit', 'dragon', 'snake', 'horse', 'sheep', 'monkey', 'rooster', 'dog', 'pig'];
-  var src = function (a) { return 'img/animals/' + a + '.webp'; };
 
   // Title letters hop one after another
   var t = document.getElementById('title');
   t.innerHTML = t.textContent.split('').map(function (c, i) {
-    return c === ' ' ? ' ' : '<span style="animation-delay:' + (i * 0.08) + 's">' + c + '</span>';
+    return c === ' ' ? ' ' : '<span style="animation-delay:' + (i * 0.09) + 's">' + c + '</span>';
   }).join('');
 
-  // Animals drifting around the hero
-  var f = document.getElementById('floaters');
-  var spots = [[2, 4], [24, 0], [48, 2], [94, 6], [96, 50], [2, 86], [26, 92], [50, 90], [78, 94], [-1, 46]];
-  spots.forEach(function (p, i) {
-    var img = new Image();
-    img.src = src(animals[i % animals.length]);
-    img.alt = '';
-    img.style.left = p[0] + '%';
-    img.style.top = p[1] + '%';
-    img.style.animationDelay = (-i * 1.3) + 's';
-    img.style.animationDuration = (7 + (i % 4) * 1.5) + 's';
-    f.appendChild(img);
-  });
-
-  // Phone slideshow
-  var shots = document.querySelectorAll('#screen img');
-  var dots = document.getElementById('dots');
-  shots.forEach(function () { dots.appendChild(document.createElement('i')); });
-  var cur = 0;
-  var show = function (n) {
-    shots[cur].classList.remove('on'); dots.children[cur].classList.remove('on');
-    cur = n;
-    shots[cur].classList.add('on'); dots.children[cur].classList.add('on');
-  };
-  show(0);
-  if (!still) setInterval(function () { show((cur + 1) % shots.length); }, 3200);
-
-  // Gallery loops forever: repeat its items once
-  var track = document.getElementById('track');
-  track.innerHTML += track.innerHTML;
-
-  // Reveal on scroll
-  var io = new IntersectionObserver(function (es) {
-    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.15 });
-  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-
-  // How to play: a small board that plays itself
-  var board = document.getElementById('board');
-  var tray = document.getElementById('tray');
-  var slots = [];
-  for (var s = 0; s < 7; s++) { var d = document.createElement('div'); d.className = 'slot'; tray.appendChild(d); slots.push(d); }
-
-  var deal = function () {
-    var pool = ['tiger', 'rabbit', 'dragon', 'panda', 'monkey'];
-    var tiles = [];
-    pool.forEach(function (a) { for (var k = 0; k < 3; k++) tiles.push(a); });
-    for (var i = tiles.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var x = tiles[i]; tiles[i] = tiles[j]; tiles[j] = x; }
-    board.innerHTML = '';
-    tiles.forEach(function (a) {
-      var el = document.createElement('div');
-      el.className = 'tile'; el.dataset.a = a;
-      el.innerHTML = '<img src="' + src(a) + '" alt="">';
-      board.appendChild(el);
-    });
-  };
-
-  var held = [];
-  var burst = function (slot) {
-    var r = slot.getBoundingClientRect(), b = board.parentNode.getBoundingClientRect();
-    var colors = ['#ffc531', '#e8323c', '#3fae5a', '#6f56d9', '#ff8ac2'];
-    for (var i = 0; i < 10; i++) {
-      var p = document.createElement('span');
-      p.className = 'burst';
-      p.style.background = colors[i % colors.length];
-      p.style.left = (r.left - b.left + r.width / 2) + 'px';
-      p.style.top = (r.top - b.top + r.height / 2) + 'px';
-      var ang = i / 10 * Math.PI * 2;
-      p.style.setProperty('--x', Math.cos(ang) * 50 + 'px');
-      p.style.setProperty('--y', Math.sin(ang) * 50 + 'px');
-      board.parentNode.appendChild(p);
-      setTimeout(function (q) { q.remove(); }, 750, p);
-    }
-  };
-  var redraw = function () {
-    slots.forEach(function (sl, i) {
-      sl.className = 'slot';
-      sl.innerHTML = held[i] ? '<img src="' + src(held[i]) + '" alt="">' : '';
-    });
-  };
-
-  var step = function () {
-    var left = Array.prototype.filter.call(board.children, function (el) { return el.style.visibility !== 'hidden'; });
-    if (!left.length) { setTimeout(function () { deal(); held = []; redraw(); setTimeout(step, 900); }, 1200); return; }
-    // Prefer an animal already in the tray, the way a careful player would
-    var want = held.length ? held[held.length - 1] : null;
-    var pick = left.find(function (el) { return el.dataset.a === want; }) || left[Math.floor(Math.random() * left.length)];
-    pick.classList.add('pick');
-    setTimeout(function () {
-      pick.style.visibility = 'hidden';
-      var a = pick.dataset.a;
-      var at = held.lastIndexOf(a);
-      if (at < 0) held.push(a); else held.splice(at + 1, 0, a);
-      redraw();
-      var n = held.filter(function (h) { return h === a; }).length;
-      if (n === 3) {
-        var first = held.indexOf(a);
-        for (var i = first; i < first + 3; i++) slots[i].classList.add('pop');
-        burst(slots[first + 1]);
-        setTimeout(function () { held = held.filter(function (h) { return h !== a; }); redraw(); setTimeout(step, 500); }, 480);
-      } else setTimeout(step, 650);
-    }, 260);
-  };
-
-  deal(); redraw();
-  if (!still) {
-    var started = false;
-    new IntersectionObserver(function (es) {
-      if (es[0].isIntersecting && !started) { started = true; setTimeout(step, 600); }
-    }).observe(board);
+  // Cherry blossom petals
+  var p = document.getElementById('petals');
+  for (var i = 0; i < 18; i++) {
+    var e = document.createElement('i');
+    e.style.left = (Math.random() * 100) + '%';
+    e.style.animationDuration = (9 + Math.random() * 8) + 's';
+    e.style.animationDelay = (-Math.random() * 16) + 's';
+    e.style.scale = String(0.6 + Math.random() * 0.7);
+    p.appendChild(e);
   }
+
+  // Fan of phones: the front one changes every few seconds, a tap brings one forward
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#fan figure'));
+  var cap = document.getElementById('caption');
+  var front = 0;
+  var place = function () {
+    var n = cards.length;
+    cards.forEach(function (c, i) {
+      var d = ((i - front) % n + n) % n;
+      if (d > n / 2) d -= n;
+      c.dataset.pos = Math.max(-3, Math.min(3, d));
+    });
+    cap.textContent = cards[front].querySelector('img').alt;
+  };
+  var timer;
+  var auto = function () { if (!still) timer = setInterval(function () { front = (front + 1) % cards.length; place(); }, 3200); };
+  cards.forEach(function (c, i) {
+    c.addEventListener('click', function () { clearInterval(timer); front = i; place(); auto(); });
+  });
+  place(); auto();
 })();
 </script>
 </body>
