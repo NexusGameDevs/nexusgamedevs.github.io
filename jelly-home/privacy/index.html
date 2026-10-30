@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jelly Home Privacy</title>
+<meta name="description" content="Privacy policy for the Jelly Home puzzle game by Nexus Game Development.">
+<link rel="icon" href="../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #3a2350;
+    --soft: #6e5a82;
+    --pink: #ff5fa2;
+    --card: #fffafd;
+    --sky-top: #ffe3f1;
+    --sky-bottom: #e4e6ff;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--ink);
+    font: 17px/1.65 "Nunito", system-ui, sans-serif;
+    background: linear-gradient(180deg, var(--sky-top), var(--sky-bottom)) fixed;
+  }
+  .blobs { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+  .blobs i { position: absolute; border-radius: 42% 58% 55% 45% / 50% 45% 55% 50%; opacity: .5; animation: wobble 9s ease-in-out infinite; }
+  .blobs i:nth-child(1) { width: 140px; height: 120px; left: 4%; top: 12%; background: #7fd6ff; }
+  .blobs i:nth-child(2) { width: 110px; height: 100px; right: 6%; top: 28%; background: #ffd25e; animation-delay: -3s; }
+  .blobs i:nth-child(3) { width: 160px; height: 130px; left: 8%; bottom: 8%; background: #8ce99a; animation-delay: -5s; }
+  .blobs i:nth-child(4) { width: 120px; height: 110px; right: 10%; bottom: 14%; background: #ff8fc4; animation-delay: -7s; }
+  @keyframes wobble {
+    0%, 100% { transform: translateY(0) scale(1, 1); }
+    50% { transform: translateY(-16px) scale(1.06, .94); }
+  }
+  header { position: relative; z-index: 1; display: flex; align-items: center; gap: 12px; width: min(820px, 100% - 32px); margin: 0 auto; padding: 22px 0; }
+  header img { width: 52px; height: 52px; border-radius: 14px; box-shadow: 0 6px 16px rgba(58, 35, 80, .2); }
+  header span { font: 800 26px "Baloo 2", sans-serif; color: var(--pink); }
+  main { position: relative; z-index: 1; width: min(820px, 100% - 32px); margin: 0 auto 40px; }
+  article { background: var(--card); border-radius: 28px; padding: clamp(22px, 5vw, 48px); box-shadow: 0 18px 40px rgba(58, 35, 80, .14); }
+  h1 { font: 800 clamp(36px, 6vw, 50px)/1.1 "Baloo 2", sans-serif; color: var(--pink); margin: 0 0 4px; }
+  h2 { font: 800 25px "Baloo 2", sans-serif; margin: 28px 0 4px; }
+  .meta { color: var(--soft); margin: 0 0 18px; }
+  a { color: #c23a7d; }
+  footer { position: relative; z-index: 1; text-align: center; color: var(--soft); font-size: 15px; padding: 0 16px 40px; }
+  @media (prefers-reduced-motion: reduce) { .blobs i { animation: none; } }
+</style>
+</head>
+<body>
+<div class="blobs" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<header><img src="../icon.png" alt=""><span>Jelly Home</span></header>
+
+<main>
+  <article>
+    <h1>Privacy policy</h1>
+    <p class="meta">Jelly Home by Nexus Game Development. Effective October 30, 2026.</p>
+
+    <p>Jelly Home is a puzzle game for everyone, including children. It was made so that it never needs to know anything about the person playing it. This page explains what the game does and does not do with information.</p>
+
+    <h2>What we collect</h2>
+    <p>Nothing. The game does not ask for a name, email address, age, location, photos, contacts or any other personal information. There is no account and no sign in.</p>
+
+    <h2>What stays on the device</h2>
+    <p>The game saves which levels are finished, the stars earned and the sound settings in a file on the phone or tablet, so play can continue next time. This file is never sent to us or to anyone else. Uninstalling the game deletes it.</p>
+
+    <h2>Permissions</h2>
+    <p>The game asks for no special device permissions. It does not use the camera, the microphone, contacts or location.</p>
+
+    <h2>Internet, ads and analytics</h2>
+    <p>The game plays fully offline and does not connect to the internet. It contains no ads, no analytics, no tracking, no advertising identifiers and no social features. Players cannot chat with or contact anyone.</p>
+
+    <h2>Purchases</h2>
+    <p>The game has no purchases of any kind.</p>
+
+    <h2>Children</h2>
+    <p>Because we collect no personal information, we do not collect personal information from children under 13 or any other age. This meets the Children's Online Privacy Protection Act (COPPA) and the Google Play Families policy.</p>
+
+    <h2>Changes</h2>
+    <p>If a future version of the game changes any of this, for example by adding ads or purchases, we will update this page first and change the date at the top.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:itdevelopment@nexusgamedevs.org">itdevelopment@nexusgamedevs.org</a></p>
+  </article>
+</main>
+
+<footer>&copy; 2026 Nexus Game Development</footer>
+</body>
+</html>
