@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knock It Off Privacy</title>
+<meta name="description" content="Privacy policy for the Knock It Off cat game by Nexus Game Development.">
+<link rel="icon" href="../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #241f2e;
+    --soft: #6b5f7d;
+    --accent: #ff6b4a;
+    --gold: #ffc247;
+    --card: #fbf3e4;
+    --night: #2e2850;
+    --night-low: #4a3a66;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--ink);
+    font: 17px/1.65 "Nunito", system-ui, sans-serif;
+    background: linear-gradient(180deg, var(--night), var(--night-low)) fixed;
+  }
+  .sky { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+  .sky i { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #fff7d6; animation: twinkle 3s ease-in-out infinite; }
+  .moon { position: fixed; top: 60px; right: 8%; width: 70px; height: 70px; border-radius: 50%; box-shadow: -14px 8px 0 0 #fff3c4; z-index: 0; }
+  @keyframes twinkle { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+  header { position: relative; z-index: 1; display: flex; align-items: center; gap: 12px; width: min(820px, 100% - 32px); margin: 0 auto; padding: 22px 0; }
+  header img { width: 52px; height: 52px; border-radius: 14px; box-shadow: 0 6px 16px rgba(0, 0, 0, .35); }
+  header span { font: 800 26px "Baloo 2", sans-serif; color: var(--card); letter-spacing: .5px; }
+  main { position: relative; z-index: 1; width: min(820px, 100% - 32px); margin: 0 auto 40px; }
+  article { background: var(--card); border: 4px solid var(--ink); border-bottom-width: 10px; border-radius: 28px; padding: clamp(22px, 5vw, 48px); box-shadow: 0 18px 40px rgba(0, 0, 0, .3); }
+  h1 { font: 800 clamp(36px, 6vw, 50px)/1.1 "Baloo 2", sans-serif; color: var(--accent); margin: 0 0 4px; }
+  h2 { font: 800 25px "Baloo 2", sans-serif; margin: 28px 0 4px; }
+  .meta { color: var(--soft); margin: 0 0 18px; }
+  a { color: #c0452c; }
+  footer { position: relative; z-index: 1; text-align: center; color: #d9cfe6; font-size: 15px; padding: 0 16px 40px; }
+  @media (prefers-reduced-motion: reduce) { .sky i { animation: none; opacity: .7; } }
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true">
+  <i style="left:6%;top:14%"></i><i style="left:18%;top:40%;animation-delay:-1s"></i><i style="left:12%;top:72%;animation-delay:-2s"></i>
+  <i style="left:84%;top:30%;animation-delay:-.5s"></i><i style="left:92%;top:58%;animation-delay:-1.5s"></i><i style="left:78%;top:82%;animation-delay:-2.5s"></i>
+</div>
+<div class="moon" aria-hidden="true"></div>
+
+<header><img src="../icon.png" alt=""><span>Knock It Off</span></header>
+
+<main>
+  <article>
+    <h1>Privacy policy</h1>
+    <p class="meta">Knock It Off by Nexus Game Development. Effective October 30, 2026.</p>
+
+    <p>Knock It Off is a game about a cat knocking things off shelves, for phones, tablets and computers. It was made so that it never needs to know anything about the person playing it. This page explains what the game does and does not do with information.</p>
+
+    <h2>What we collect</h2>
+    <p>Nothing. The game does not ask for a name, email address, age, location, photos, contacts or any other personal information. There is no account and no sign in.</p>
+
+    <h2>What stays on the device</h2>
+    <p>The game saves your best scores, the tools you have unlocked and your sound and window settings in a file on the phone, tablet or computer, so play can continue next time. This file is never sent to us or to anyone else. On a phone or tablet, uninstalling the game deletes it. On Windows it is kept in your user's AppData folder under Godot\app_userdata\Knock It Off, and deleting that folder removes it.</p>
+
+    <h2>Permissions</h2>
+    <p>The game asks for no special device permissions. It does not use the camera, the microphone, contacts or location.</p>
+
+    <h2>Internet, ads and analytics</h2>
+    <p>The game plays fully offline and does not connect to the internet. It contains no ads, no analytics, no tracking, no advertising identifiers and no social features. Players cannot chat with or contact anyone.</p>
+
+    <h2>Purchases</h2>
+    <p>The game has no purchases. Tools are unlocked with points earned by playing, never with money.</p>
+
+    <h2>Store platforms</h2>
+    <p>If you get the game from a store such as Google Play or Steam, that store handles the download and any account you hold with it, under its own privacy policy. The game itself shares nothing with the store.</p>
+
+    <h2>Children</h2>
+    <p>Because we collect no personal information, we do not collect personal information from children under 13 or any other age. This meets the Children's Online Privacy Protection Act (COPPA) and the Google Play Families policy.</p>
+
+    <h2>Changes</h2>
+    <p>If a future version of the game changes any of this, for example by adding Steam achievements, ads or purchases, we will update this page first and change the date at the top.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:itdevelopment@nexusgamedevs.org">itdevelopment@nexusgamedevs.org</a></p>
+  </article>
+</main>
+
+<footer>&copy; 2026 Nexus Game Development</footer>
+</body>
+</html>
